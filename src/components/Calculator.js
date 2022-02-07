@@ -1,15 +1,25 @@
-import TypePad from './Lists';
+import { Component } from 'react';
+import TypePad from './lists/TypePad';
 
 import Answer from './Answer';
 import './Calculator.css';
 
-const Calculator = () => (
-  <ul>
-    <Answer />
+class Calculator extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {};
+  }
 
-    <TypePad />
+  render() {
+    return (
+      <ul>
+        <Answer />
 
-  </ul>
-);
+        <TypePad />
+
+      </ul>
+    );
+  }
+}
 
 export default Calculator;
