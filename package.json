@@ -18,7 +18,8 @@
     "eject": "react-scripts eject",
     "lint": "eslint . --cache --fix",
     "style": "npx stylelint \"**/*.{css,scss}\" --cache --fix",
-    "full-lint": "npm run lint&&npm run style"
+    "full-lint": "npm run lint&&npm run style",
+    "dev-start": "npm run lint&&npm run start"
   },
   "eslintConfig": {
     "extends": [
