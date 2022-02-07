@@ -1,8 +1,14 @@
-import NumberTile from './NumberTile';
+import TypePad from './Lists';
+
+import Answer from './Answer';
+import './Calculator.css';
 
 const Calculator = () => (
   <ul>
-    <NumberTile />
+    <Answer />
+
+    <TypePad />
+
   </ul>
 );
 
