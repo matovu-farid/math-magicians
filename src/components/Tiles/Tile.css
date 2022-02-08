@@ -13,6 +13,7 @@ ul {
   height: 35px;
   font-size: 0.6rem;
   font-weight: 600;
+  cursor: pointer;
 }
 
 .wide {
