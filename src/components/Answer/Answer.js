@@ -1,3 +1,4 @@
+import propTypes from 'prop-types';
 import { Component } from 'react';
 import './Answer.css';
 
@@ -8,8 +9,23 @@ class Answer extends Component {
   }
 
   render() {
-    return (<div className="answer">0</div>);
+    const { total, next, operation } = this.props;
+    if (!total && !next) return (<div className="answer">0</div>);
+    if (!total) return (<div className="answer">{next}</div>);
+    return (<div className="answer">{`${total} ${operation ?? ''} ${next ?? ''}`}</div>);
   }
 }
+
+Answer.propTypes = {
+  total: propTypes.string,
+  next: propTypes.string,
+  operation: propTypes.string,
+};
+
+Answer.defaultProps = {
+  total: '',
+  next: '',
+  operation: '',
+};
 
 export default Answer;

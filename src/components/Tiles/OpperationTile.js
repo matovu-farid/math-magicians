@@ -8,9 +8,38 @@ export default class OpperationTile extends Component {
     this.state = {};
   }
 
+  onClick=({ target: { textContent } }) => {
+    const name = textContent.trim();
+    const { handleButtonClick } = this.props;
+    handleButtonClick(name);
+  }
+
   render() {
-    const { opp } = this.props;
-    return (<li className="tile orange">{opp}</li>);
+    const { opp, handleOpperate } = this.props;
+    if (opp === '=') {
+      return (
+        <button
+          type="button"
+          className="tile orange"
+          onClick={handleOpperate}
+        >
+          {opp}
+        </button>
+      );
+    }
+    return (
+      <button
+        type="button"
+        className="tile orange"
+        onClick={this.onClick}
+      >
+        {opp}
+      </button>
+    );
   }
 }
-OpperationTile.propTypes = { opp: PropTypes.string.isRequired };
+OpperationTile.propTypes = {
+  opp: PropTypes.string.isRequired,
+  handleButtonClick: PropTypes.func.isRequired,
+  handleOpperate: PropTypes.func.isRequired,
+};
