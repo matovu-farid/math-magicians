@@ -9,11 +9,15 @@ import operate from '../../logic/operate';
 class Calculator extends Component {
   constructor(props) {
     super(props);
-    this.state = {
+    this.state = {};
+  }
+
+  componentDidMount() {
+    this.setState({
       total: null,
       next: null,
       operation: null,
-    };
+    });
   }
 
   handleButtonClick = (buttonName) => {
