@@ -1,5 +1,5 @@
 import { Component } from 'react';
-import { OpperationTile } from '../Tile';
+import { OpperationTile } from '../Tiles/Tile';
 
 class OperationList extends Component {
   constructor(props) {

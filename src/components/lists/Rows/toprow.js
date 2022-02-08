@@ -1,5 +1,5 @@
 import { Component } from 'react';
-import { NumberTile } from '../Tile';
+import { NumberTile } from '../../Tiles/Tile';
 
 class TopSymbolRow extends Component {
   constructor(props) {

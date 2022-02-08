@@ -1,7 +1,7 @@
 import { Component } from 'react';
-import TypePad from './lists/TypePad';
+import TypePad from '../components/Lists/TypePad';
 
-import Answer from './Answer';
+import Answer from '../components/Answer/Answer';
 import './Calculator.css';
 
 class Calculator extends Component {
@@ -12,7 +12,7 @@ class Calculator extends Component {
 
   render() {
     return (
-      <ul>
+      <ul className="centerBox">
         <Answer />
 
         <TypePad />

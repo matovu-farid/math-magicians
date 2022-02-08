@@ -1,6 +1,6 @@
 import { Component } from 'react';
-import BottomRow from '../rows/bottomrow';
-import TopSymbolRow from '../rows/toprow';
+import BottomRow from './Rows/bottomrow';
+import TopSymbolRow from './Rows/toprow';
 import NumberList from './NumberList';
 
 class MainList extends Component {

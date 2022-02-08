@@ -1,5 +1,5 @@
 import { Component } from 'react';
-import { NumberTile, WideTile } from '../Tile';
+import { NumberTile, WideTile } from '../../Tiles/Tile';
 
 class BottomRow extends Component {
   constructor(props) {
