@@ -1,5 +1,5 @@
 import { Component } from 'react';
-import TypePad from '../Lists/TypePad';
+import TypePad from '../List/List';
 
 import Answer from '../Answer/Answer';
 import './Calculator.css';
