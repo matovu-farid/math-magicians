@@ -1,9 +1,8 @@
 
-
 .num-list {
   display: flex;
   flex-wrap: wrap-reverse;
-  width: 210px
+  width: 210px;
 }
 
 .top-list {

@@ -1,7 +1,7 @@
 import { Component } from 'react';
-import TypePad from '../components/Lists/TypePad';
+import TypePad from '../Lists/TypePad';
 
-import Answer from '../components/Answer/Answer';
+import Answer from '../Answer/Answer';
 import './Calculator.css';
 
 class Calculator extends Component {

@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Calculator from './Calculator/Calculator';
+import Calculator from './components/Calculator/Calculator';
 import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
