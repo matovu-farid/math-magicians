@@ -1,3 +1,4 @@
+import propTypes from 'prop-types';
 import { Component } from 'react';
 import { NumberTile } from '../../Tiles/Tile';
 
@@ -8,14 +9,19 @@ class TopSymbolRow extends Component {
   }
 
   render() {
+    const { handleButtonClick } = this.props;
     return (
       <ul className="flex">
-        <NumberTile value="AC" />
-        <NumberTile value="+/-" />
-        <NumberTile value="%" />
+        <NumberTile value="AC" handleButtonClick={handleButtonClick} />
+        <NumberTile value="+/-" handleButtonClick={handleButtonClick} />
+        <NumberTile value="%" handleButtonClick={handleButtonClick} />
       </ul>
     );
   }
 }
+
+TopSymbolRow.propTypes = {
+  handleButtonClick: propTypes.func.isRequired,
+};
 
 export default TopSymbolRow;
