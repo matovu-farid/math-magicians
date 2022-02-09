@@ -4,7 +4,7 @@
 
 This a website that provides a math calculator to perform mathematical operations.
 
-![screenshot](./to-do-screenshot.PNG)
+![screenshot](./screenshot.PNG)
 
 This project is a math-magicians app.
 
