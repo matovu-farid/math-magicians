@@ -1,4 +1,4 @@
-import { Component } from 'react';
+import { useState } from 'react';
 import TypePad from '../List/List';
 
 import Answer from '../Answer/Answer';
@@ -6,43 +6,38 @@ import './Calculator.css';
 import calculate from '../../logic/calculate';
 import operate from '../../logic/operate';
 
-class Calculator extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {};
-  }
+const Calculator = () => {
+  const [total, setTotal] = useState(null);
+  const [next, setNext] = useState(null);
+  const [operation, setOperation] = useState(null);
 
-  componentDidMount() {
-    this.setState({
-      total: null,
-      next: null,
-      operation: null,
-    });
-  }
+  const getState = () => (
+    { total, next, operation }
+  );
 
-  handleButtonClick = (buttonName) => {
-    const obj = calculate({ ...this.state }, buttonName);
-    this.setState(obj);
-  }
+  const handleButtonClick = (buttonName) => {
+    const obj = calculate(getState(), buttonName);
+    const { total: totalGot, next: nextGot, operation: operationGot } = obj;
+    if (totalGot !== undefined) setTotal(totalGot);
+    if (nextGot !== undefined) setNext(nextGot);
+    if (operationGot !== undefined) setOperation(operationGot);
+  };
 
-  handleOpperate = () => {
-    const { total, next, operation } = this.state;
-    this.setState({ total: operate(total, next, operation) }, () => {
-      this.setState({ next: null, operation: null });
-    });
-  }
+  const handleOpperate = () => {
+    const answer = operate(total, next, operation);
+    setTotal(answer);
+    setOperation(null);
+    setNext(null);
+  };
 
-  render() {
-    const { total, next, operation } = this.state;
-    return (
-      <ul className="centerBox">
-        <Answer total={total} next={next} operation={operation} />
+  return (
+    <ul className="centerBox">
+      <Answer total={total} next={next} operation={operation} />
 
-        <TypePad handleButtonClick={this.handleButtonClick} handleOpperate={this.handleOpperate} />
+      <TypePad handleButtonClick={handleButtonClick} handleOpperate={handleOpperate} />
 
-      </ul>
-    );
-  }
-}
+    </ul>
+  );
+};
 
 export default Calculator;
