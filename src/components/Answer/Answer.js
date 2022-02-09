@@ -10,8 +10,8 @@ class Answer extends Component {
 
   render() {
     const { total, next, operation } = this.props;
-    if (!total && !next) return (<div className="answer">0</div>);
-    if (!total) return (<div className="answer">{next}</div>);
+    if (total === null && next === null) return (<div className="answer">0</div>);
+    if (total === null) return (<div className="answer">{next}</div>);
     return (<div className="answer">{`${total} ${operation ?? ''} ${next ?? ''}`}</div>);
   }
 }
