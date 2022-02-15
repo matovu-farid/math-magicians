@@ -7,8 +7,20 @@
 .nav-list li{
   list-style-type: none;
   padding: 10px;
+  
+  
 
 }
+
+.navlink {
+  display: flex;
+  align-items: center;
+}
+
+.navlink span {
+  margin: 0 10px;
+}
+
 
 .nav-bar {
   display: flex;
@@ -21,4 +33,5 @@
 
 .inactive {
   color: rgb(19, 8, 56);
+  text-decoration: none;
 }
