@@ -2,13 +2,13 @@ import { Route, Routes } from 'react-router-dom';
 import Navbar from './components/Navbar/Navbar';
 import Calculator from './pages/Calculator';
 import Quote from './pages/Quote';
-// import Home from './pages/Home';
+import Home from './pages/Home';
 
 const App = () => (
   <>
     <Navbar />
     <Routes>
-      <Route path="/" element={<Calculator />} />
+      <Route path="/" element={<Home />} />
       <Route path="/calculator" element={<Calculator />} />
       <Route path="/quote" element={<Quote />} />
 
