@@ -3,6 +3,7 @@ import Navbar from './components/Navbar/Navbar';
 import Calculator from './pages/Calculator';
 import Quote from './pages/Quote';
 import Home from './pages/Home';
+import './App.css';
 
 const App = () => (
   <>

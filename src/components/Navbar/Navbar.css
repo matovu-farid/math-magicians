@@ -14,3 +14,11 @@
   display: flex;
   justify-content: space-between;
 }
+
+.active {
+  color: orangered;
+}
+
+.inactive {
+  color: rgb(19, 8, 56);
+}
