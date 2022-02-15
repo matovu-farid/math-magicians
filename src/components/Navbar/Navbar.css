@@ -1,15 +1,11 @@
 .nav-list {
   display: flex;
   justify-content: flex-end;
-
 }
 
-.nav-list li{
+.nav-list li {
   list-style-type: none;
   padding: 10px;
-  
-  
-
 }
 
 .navlink {
@@ -20,7 +16,6 @@
 .navlink span {
   margin: 0 10px;
 }
-
 
 .nav-bar {
   display: flex;
