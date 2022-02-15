@@ -1,10 +1,10 @@
 import { useState } from 'react';
-import TypePad from '../List/List';
+import TypePad from '../components/List/List';
 
-import Answer from '../Answer/Answer';
+import Answer from '../components/Answer/Answer';
 import './Calculator.css';
-import calculate from '../../logic/calculate';
-import operate from '../../logic/operate';
+import calculate from '../logic/calculate';
+import operate from '../logic/operate';
 
 const Calculator = () => {
   const [total, setTotal] = useState(null);
@@ -31,12 +31,15 @@ const Calculator = () => {
   };
 
   return (
-    <ul className="centerBox">
-      <Answer total={total} next={next} operation={operation} />
+    <div className="calc-page">
+      <p>Let us do some Math!</p>
+      <ul className="centerBox">
+        <Answer total={total} next={next} operation={operation} />
 
-      <TypePad handleButtonClick={handleButtonClick} handleOpperate={handleOpperate} />
+        <TypePad handleButtonClick={handleButtonClick} handleOpperate={handleOpperate} />
 
-    </ul>
+      </ul>
+    </div>
   );
 };
 

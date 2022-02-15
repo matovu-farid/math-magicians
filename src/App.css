@@ -1,3 +1,16 @@
-body {
+html {
   font-size: 10px;
+}
+
+body {
+  font-size: 2rem;
+  font-family: 'Open Sans', sans-serif;
+  line-height: 1.5;
+  color: rgb(19, 8, 56);
+}
+
+h1,
+h2 {
+  font-family: 'Roboto Serif', sans-serif;
+  line-height: 1.25;
 }
