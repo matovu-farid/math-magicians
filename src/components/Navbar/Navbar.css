@@ -9,3 +9,8 @@
   padding: 10px;
 
 }
+
+.nav-bar {
+  display: flex;
+  justify-content: space-between;
+}
