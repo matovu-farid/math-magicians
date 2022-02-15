@@ -31,12 +31,15 @@ const Calculator = () => {
   };
 
   return (
-    <ul className="centerBox">
-      <Answer total={total} next={next} operation={operation} />
+    <div className="calc-page">
+      <p>Let us do some Math!</p>
+      <ul className="centerBox">
+        <Answer total={total} next={next} operation={operation} />
 
-      <TypePad handleButtonClick={handleButtonClick} handleOpperate={handleOpperate} />
+        <TypePad handleButtonClick={handleButtonClick} handleOpperate={handleOpperate} />
 
-    </ul>
+      </ul>
+    </div>
   );
 };
 

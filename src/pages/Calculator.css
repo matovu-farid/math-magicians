@@ -16,3 +16,10 @@
 .flex {
   display: flex;
 }
+
+.calc-page {
+  display: flex;
+}
+.calc-page > * {
+  flex: 1
+}
