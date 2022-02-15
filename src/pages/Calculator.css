@@ -20,6 +20,7 @@
 .calc-page {
   display: flex;
 }
+
 .calc-page > * {
-  flex: 1
+  flex: 1;
 }

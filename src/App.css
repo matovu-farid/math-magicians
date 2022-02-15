@@ -1,6 +1,7 @@
 html {
   font-size: 10px;
 }
+
 body {
   font-size: 2rem;
   font-family: 'Open Sans', sans-serif;
@@ -8,7 +9,8 @@ body {
   color: rgb(19, 8, 56);
 }
 
-h1,h2 {
+h1,
+h2 {
   font-family: 'Roboto Serif', sans-serif;
   line-height: 1.25;
 }
