@@ -1,0 +1,35 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<ul
+  className="flex"
+>
+  <li>
+    <button
+      className="tile"
+      onClick={[Function]}
+      type="button"
+    >
+      AC
+    </button>
+  </li>
+  <li>
+    <button
+      className="tile"
+      onClick={[Function]}
+      type="button"
+    >
+      +/-
+    </button>
+  </li>
+  <li>
+    <button
+      className="tile"
+      onClick={[Function]}
+      type="button"
+    >
+      %
+    </button>
+  </li>
+</ul>
+`;

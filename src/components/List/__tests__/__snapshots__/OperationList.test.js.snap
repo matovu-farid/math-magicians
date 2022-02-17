@@ -1,0 +1,52 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<ul
+  className="opp-list"
+>
+  <li>
+    <button
+      className="tile orange"
+      onClick={[Function]}
+      type="button"
+    >
+      ÷
+    </button>
+  </li>
+  <li>
+    <button
+      className="tile orange"
+      onClick={[Function]}
+      type="button"
+    >
+      -
+    </button>
+  </li>
+  <li>
+    <button
+      className="tile orange"
+      onClick={[Function]}
+      type="button"
+    >
+      x
+    </button>
+  </li>
+  <li>
+    <button
+      className="tile orange"
+      onClick={[Function]}
+      type="button"
+    >
+      +
+    </button>
+  </li>
+  <li>
+    <button
+      className="tile orange"
+      type="button"
+    >
+      =
+    </button>
+  </li>
+</ul>
+`;

@@ -9,6 +9,10 @@ body {
   color: rgb(19, 8, 56);
 }
 
+li {
+  list-style-type: none;
+}
+
 h1,
 h2 {
   font-family: 'Roboto Serif', sans-serif;

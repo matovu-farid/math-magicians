@@ -12,9 +12,15 @@ class TopSymbolRow extends Component {
     const { handleButtonClick } = this.props;
     return (
       <ul className="flex">
-        <NumberTile value="AC" handleButtonClick={handleButtonClick} />
-        <NumberTile value="+/-" handleButtonClick={handleButtonClick} />
-        <NumberTile value="%" handleButtonClick={handleButtonClick} />
+        <li>
+          <NumberTile value="AC" handleButtonClick={handleButtonClick} />
+        </li>
+        <li>
+          <NumberTile value="+/-" handleButtonClick={handleButtonClick} />
+        </li>
+        <li>
+          <NumberTile value="%" handleButtonClick={handleButtonClick} />
+        </li>
       </ul>
     );
   }

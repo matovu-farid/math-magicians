@@ -16,12 +16,13 @@ class OperationList extends Component {
 
         {this.symbolArray
           .map((symbol) => (
-            <OpperationTile
-              key={symbol}
-              opp={symbol}
-              handleButtonClick={handleButtonClick}
-              handleOpperate={handleOpperate}
-            />
+            <li key={symbol}>
+              <OpperationTile
+                opp={symbol}
+                handleButtonClick={handleButtonClick}
+                handleOpperate={handleOpperate}
+              />
+            </li>
           ))}
       </ul>
     );
