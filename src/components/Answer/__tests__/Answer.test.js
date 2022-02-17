@@ -1,5 +1,6 @@
 import '@testing-library/jest-dom';
 import { render, screen } from '@testing-library/react';
+import renderer from 'react-test-renderer';
 import Answer from '../Answer';
 
 describe('Answer component tests', () => {
@@ -17,6 +18,14 @@ describe('Answer component tests', () => {
       next: null,
       operation: null,
     };
+  });
+
+  it('renders correctly', () => {
+    const { total, next, operation } = sampleObject;
+    const tree = renderer.create(
+      <Answer total={total} next={next} operation={operation} />,
+    ).toJSON();
+    expect(tree).toMatchSnapshot();
   });
 
   it('should display "10 + 2"', () => {
