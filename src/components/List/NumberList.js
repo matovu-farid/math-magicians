@@ -14,7 +14,14 @@ class NumberList extends Component {
       <ul className="num-list">
 
         {
-      Array.from(Array(9).keys()).map((i) => <NumberTile key={i} handleButtonClick={handleButtonClick} value={`${i + 1}`} />)
+      Array.from(Array(9).keys()).map((i) => (
+        <li key={i}>
+          <NumberTile
+            handleButtonClick={handleButtonClick}
+            value={`${i + 1}`}
+          />
+        </li>
+      ))
     }
       </ul>
     );

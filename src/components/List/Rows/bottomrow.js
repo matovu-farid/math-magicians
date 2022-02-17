@@ -12,8 +12,14 @@ class BottomRow extends Component {
     const { handleButtonClick } = this.props;
     return (
       <ul className="top-list">
-        <WideTile handleButtonClick={handleButtonClick} value="0" />
-        <NumberTile handleButtonClick={handleButtonClick} value="." />
+        <li>
+          <WideTile handleButtonClick={handleButtonClick} value="0" />
+
+        </li>
+        <li>
+
+          <NumberTile handleButtonClick={handleButtonClick} value="." />
+        </li>
       </ul>
     );
   }
