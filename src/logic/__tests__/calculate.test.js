@@ -1,6 +1,6 @@
 import calculate from '../calculate';
 
-describe.skip('calulate methods', () => {
+describe('calulate methods', () => {
   let sampleObject;
   let nullObject;
 

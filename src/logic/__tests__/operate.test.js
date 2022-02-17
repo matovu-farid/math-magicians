@@ -1,6 +1,6 @@
 import operate from '../operate';
 
-describe.skip('Operate function', () => {
+describe('Operate function', () => {
   it('should return 5 for the sum of 2 and 3', () => {
     expect(operate('2', '3', '+')).toBe('5');
   });

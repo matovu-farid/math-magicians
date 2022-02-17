@@ -3,7 +3,7 @@ import { render, screen } from '@testing-library/react';
 import { BrowserRouter } from 'react-router-dom';
 import Navbar from '../Navbar';
 
-describe.skip('navbar tests', () => {
+describe('navbar tests', () => {
   const MockNavBar = () => (
     <BrowserRouter>
       <Navbar />
@@ -11,7 +11,7 @@ describe.skip('navbar tests', () => {
   );
   it('should display correct value', () => {
     render(<MockNavBar />);
-    const links = screen.queryAllByRole('button');
+    const links = screen.queryAllByRole('link');
 
     expect(links.length).toBe(3);
   });

@@ -2,7 +2,7 @@ import '@testing-library/jest-dom';
 import { render, screen } from '@testing-library/react';
 import Answer from '../Answer';
 
-describe.skip('Answer component tests', () => {
+describe('Answer component tests', () => {
   let sampleObject;
   let nullObject;
 
