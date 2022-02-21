@@ -22,6 +22,8 @@ To get the content of this project locally you need to run this command in your 
 ### Deployment
 This project is deployed on a github page on the link below:
 - https://matovu-farid.github.io/math-magicians/
+- https://young-plains-98429.herokuapp.com/
+- https://focused-bose-3db662.netlify.app/
 ## Author
 
 👤 **Matovu Farid Nkoba**
