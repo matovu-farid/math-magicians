@@ -1,0 +1,32 @@
+.nav-list {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.nav-list li {
+  list-style-type: none;
+  padding: 10px;
+}
+
+.navlink {
+  display: flex;
+  align-items: center;
+}
+
+.navlink span {
+  margin: 0 10px;
+}
+
+.nav-bar {
+  display: flex;
+  justify-content: space-between;
+}
+
+.active {
+  color: orangered;
+}
+
+.inactive {
+  color: rgb(19, 8, 56);
+  text-decoration: none;
+}

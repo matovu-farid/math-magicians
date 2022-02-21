@@ -1,0 +1,26 @@
+* {
+  box-sizing: border-box;
+}
+
+.inline {
+  display: inline;
+}
+
+.centerBox {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.flex {
+  display: flex;
+}
+
+.calc-page {
+  display: flex;
+}
+
+.calc-page > * {
+  flex: 1;
+}
